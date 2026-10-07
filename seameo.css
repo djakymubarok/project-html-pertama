@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'TT Hoves Pro Trial', sans-serif;
+    /* background-image: linear-gradient(to bottom, #e9ecb8, #f19e69); */
+    /* background-color: #e9ecb8; */
+    background-image: url('aset gambar/BG no logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+img,
+video {
+    max-width: 100%;
+}
+/* =========================================
+   POSTER CONTAINER
+========================================= */
+
+.poster {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+/* =========================================
+   ORIGINAL POSTER IMAGE
+========================================= */
+
+.poster-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.btn-registrasi {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.register-hotspot {
+    left: 44.7%;
+    top: 65%;
+    width: 27%;
+    height: auto;
+}
+
+.btn-registrasi a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 2vw;
+    color: #ea8030;
+    transition-duration: 0.4s;
+}
+
+.regisnow{
+    position: absolute;
+    width: 100%;
+    top: 43%;
+    left: 17%;
+}
+
+.caption-registrasi {
+    font-weight: 700;
+    font-size: 1.2vw;
+    justify-content: center;
+    color: #373737;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 100%;
+    top: 130%;
+    left: 16%;
+}
+
+.btn-registrasi a:hover {
+    color: #fff;
+    font-size: 1.8vw;
+}
+
+.qr {
+    position: absolute;
+    left: 33.7%;
+    top: 61.5%;
+    width: 10.5%;
+    height: 18.5%;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .poster {
+        width: 100%;
+    }
+
+}
+
+/* =============================================
+    HEADER
+============================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo-youth {
+    width: 10%;
+}
+
+/* =============================================
+    KONTEN
+============================================== */
+
+.konten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.judul {
+    width: 50% ;
+}
+
+.tagline {
+    width: 35%;
+}
+
+.isi_konten{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    padding: 0 30px;
+}
+
+.part_kontener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.part_kontener>ul{
+    display: grid;
+    grid-template-columns: auto auto ;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.part_kontener>ul>li {
+    margin-bottom: 15px;
+    color: #EEA517;
+}
+
+.part_kontener>ul>li>a>img{
+    width: 20%;
+}
+.part_kontener>ul>li>a {
+    position: relative;
+    color: #0a8342;
+    text-decoration: none;
+    transition: color .3s ease;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding-left: 40px;
+}
+
+.feedback {
+    font-size: 2vw;
+    font-weight: 800;
+    text-shadow: -3px -3px 0 #fff,
+                 3px -3px 0 #fff,
+                 -3px 3px 0 #fff,
+                 3px 3px 0 #fff;
+}
+
+.feedback>a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #EEA517;
+}
+
+.connect{
+    font-size: 2vw;
+    font-weight: 800;
+    text-shadow: -3px -3px 0 #fff,
+                 3px -3px 0 #fff,
+                 -3px 3px 0 #fff,
+                 3px 3px 0 #fff;
+    color: #EEA517;
+}
+
+.connect>a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #EEA517;
+}
+
+.part_kontener>ul>li>a:hover {
+    color: #fff;
+}
+.part_kontener:last-child>ul>li>a {
+    display: inline-block;
+    transition:
+        color .3s ease,
+        transform .3s ease;
+}
+
+.part_kontener:last-child>ul>li>a:hover {
+    transform: translate(3px, -2px);
+    color: #a5d146;
+}
+
+.button-visit {
+    background: #EEA517;
+    border-radius: 13px;
+    border-color: #ffae00;
+    padding: 25px 40px;
+    transition-duration: 0.4s;
+    font-size: 1.2vw;
+    text-decoration: none;
+     color: #ffffff;
+     font-weight: 600;
+     /* filter: drop-shadow(0 -1px 2px #a5d146)
+             drop-shadow(0 1px 2px #EEA517); */
+    cursor: pointer;
+}
+
+.button-visit:hover {
+    background-color: #acf438;
+    color: #fff;
+}
+
+.footer{
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.konten-footer{
+    max-width: 1550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.caption-footer{
+    font-size: 1.2vw;
+    font-weight:900;
+    color: #0a8342;
+    text-shadow: -2px -2px 0 #fff,
+                 2px -2px 0 #fff,
+                 -2px 2px 0 #fff,
+                 2px 2px 0 #fff;
+    text-align: center;
+}
+
+.konten-footer img {
+    width: 30vw;
+}
+
+.ornamen{
+    width: 10%;
+    height: 10%;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+.logo {
+    width: 30%;
+}
+
+.logo-youth {
+    width: 20%;
+}
+
+.judul {
+    width: 80% ;
+}
+
+.tagline {
+    width: 60%;
+}
+
+.part_kontener>ul{
+    grid-template-columns: auto auto;
+}
+
+.button-visit {
+    font-size: 15px;
+}
+
+.connect {
+    font-size: 3vw;
+}
+
+.footer{
+    padding-left: 50px;
+}
+
+.caption-footer{
+    font-size: 16px;
+}
+
+.konten-footer img{
+    width: 50vw;
+}
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+.isi_konten{
+    grid-template-columns: auto auto auto;
+}
+
+.button-visit{
+    font-size: 13px;
+}
+
+.caption-footer{
+    font-size: 12px;
+}
+
+.footer{
+    padding-left: 40px;
+}
+
+.konten-footer{
+    gap: 20px;
+}
+
+}
+
+@media (max-width: 600px){
+    .button-visit{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+
+.isi_konten{
+    margin: 20px 0;
+}
+
+.feedback{
+    font-size: 3vw;
+}
+
+.part_kontener>ul>li>a{
+    font-size: 2vw;
+}
+
+.button-visit {
+    font-size: 7px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.caption-footer{
+    font-size: 10px;
+}
+
+}
